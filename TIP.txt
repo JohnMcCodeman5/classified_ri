@@ -1,0 +1,12 @@
+TEMA 1:
+mozda bi bilo bolje da umesto da imamo pocetnu i krajnju destinaciju, da umesto toga zadatak bude da obidjemo svaki cvor u grafu bar jednom
+ILI da ostane originalan cilj ali da u make small changes mozemo da uradimo ono sto sad radimo sa sansom 50 posto a u drugih 50 posto
+da na toj tacki zalepimo novo resenje gde je pocetni cvor bas cvor na toj poziciji a krajnji je naravno onaj isti!!!
+
+mislim da trokira kad dobije resenje od samo dva node-a, vrv je problem u make_small_changes, pogledaj poslse
+
+kada generises matrice uzmi i napravi da razlika bude veca nego random.random * 10 ili koliko vec, treba nam veca razlika u tezinama grana
+jer i dalje u 50 posto slucajeva je krace resenje bolje
+
+
+TEMA 2:
