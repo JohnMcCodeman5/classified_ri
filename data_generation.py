@@ -82,7 +82,7 @@ def read_instance(filename):
 
 def generate_data_files():
     edge_probability = 0.5
-    dims = [5, 8, 10, 11, 15, 20, 30, 50]
+    dims = [5, 8, 10, 11, 15, 20, 30, 50, 70]
 
     for i in dims:
         num_nodes = i
@@ -105,5 +105,5 @@ def generate_data_files():
         #print("Total Edge Length:", total_edge_length)
 
 
-#generate_data_files()
+generate_data_files()
 #read_instance('data\data5.txt')

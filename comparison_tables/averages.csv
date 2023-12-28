@@ -1,0 +1,2 @@
+Dim,brute_force,brute_force_time,greedy,greedy_time,local_search,local_search_time,sim_annealing,sim_annealing_time,vns,vns_time,genetic_alg,genetic_alg_time,tabu_search,tabu_search_time
+10,43,64.34
