@@ -105,5 +105,5 @@ def generate_data_files():
         #print("Total Edge Length:", total_edge_length)
 
 
-generate_data_files()
+#generate_data_files()
 #read_instance('data\data5.txt')
