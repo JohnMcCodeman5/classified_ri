@@ -71,3 +71,11 @@ Dim,Method,Value,Time,Best_Iter
 11,tabu_scramble,104,1.16,21
 11,tabu_scramble_continuous,106,1.65,56
 11,tabu_double_bridge_move,113,1.71,266
+Dim,Method,Value,Time,Best_Iter
+10,tabu_swap_neighbors,79,0.14,10
+10,tabu_swap,79,0.33,46
+10,tabu_inverse_complete,77,0.59,13
+10,tabu_inverse,77,0.74,21
+10,tabu_scramble,77,1.04,9
+10,tabu_scramble_continuous,77,1.38,105
+10,tabu_double_bridge_move,80,1.43,354
