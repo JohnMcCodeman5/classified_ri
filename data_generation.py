@@ -79,6 +79,26 @@ def read_instance(filename):
 
 
 
+def read_scientific_instance(filename):
+
+    with open(filename, 'r') as f:
+        n = int(f.readline())
+        graph = [[0 for _ in range(n)] for _ in range(n)]
+        v = int(f.readline())
+        line = f.readline()
+        while True:
+            line = f.readline().split()
+            if len(line) != 2:
+                break
+            
+            graph[int(line[0]) - 1][int(line[1]) - 1] = 1
+            graph[int(line[1]) - 1][int(line[0]) - 1] = 1
+        
+        solution = generate_random_solution(n)
+        value = calculate_total_edge_length(graph, solution)
+        return graph, solution, value
+
+
 
 def generate_data_files():
     edge_probability = 0.5
@@ -105,5 +125,6 @@ def generate_data_files():
         #print("Total Edge Length:", total_edge_length)
 
 
-generate_data_files()
+#generate_data_files()
 #read_instance('data\data5.txt')
+#read_scientific_instance('data\\nug_12_5.txt')
