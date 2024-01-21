@@ -10,16 +10,16 @@ dfb2 = dfb[columns2]
 dfb3 = dfb[columns3]
 
 
-# Adjust the figure size based on the number of columns
+#adjust the figure size based on the number of columns
 fig, ax = plt.subplots(figsize=(10, 4)) 
-# Hide axes
+#hide axes
 ax.axis('off')
-# Use pandas plotting.table for better control
+#use pandas plotting.table for better control
 table = pd.plotting.table(ax, dfb1, loc='center', colWidths=[0.2]*len(dfb1.columns))
-# Adjust font size
+#adjust font size
 table.auto_set_font_size(False)
 table.set_fontsize(10)
-# Save the plot as an image file (e.g., PNG)
+
 plt.savefig('table_images/best_table1.png', bbox_inches='tight', pad_inches=0.1)
 
 
@@ -33,7 +33,7 @@ table.auto_set_font_size(False)
 table.set_fontsize(10)
 plt.savefig('table_images/best_table3.png', bbox_inches='tight', pad_inches=0.1)
 
-#-------------------------------------------------
+#-------------------------------------------------averages-------------------------------------------------------#
 dfa = pd.read_csv('comparison_tables/averages.csv')
 dfa1 = dfa[columns1]
 dfa2 = dfa[columns2]

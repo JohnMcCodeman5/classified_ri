@@ -3,7 +3,9 @@ import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 
-
+#this module will be used to generate randomized datasets
+#it will also be used to create a first random solution
+#and calculate the value of a solution, write and read instances of a problem 
 def generate_random_graph(num_nodes, probability):
     graph = [[0] * num_nodes for _ in range(num_nodes)]
     
@@ -121,8 +123,6 @@ def generate_data_files():
         #for row in graph:
         #    print(row)
 
-        #print("\nRandom Solution (Permutation):", random_solution)
-        #print("Total Edge Length:", total_edge_length)
 
 
 #generate_data_files()
