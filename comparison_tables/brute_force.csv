@@ -1,3 +1,4 @@
 Dim,Method,Value,Time
-8,brute_force,23,0.54
-10,brute_force,60,76.28
+5,brute_force,13,0.0
+8,brute_force,21,0.48
+10,brute_force,76,79.03

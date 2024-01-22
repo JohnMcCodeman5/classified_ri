@@ -104,7 +104,7 @@ def read_scientific_instance(filename):
 
 def generate_data_files():
     edge_probability = 0.5
-    dims = [5, 8, 10, 11, 15, 20, 30, 50, 70]
+    dims = [5, 8, 10, 11, 15, 20, 30, 50, 70, 33, 38]
 
     for i in dims:
         num_nodes = i
