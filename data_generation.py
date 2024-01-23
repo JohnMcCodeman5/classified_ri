@@ -9,9 +9,19 @@ from matplotlib import pyplot as plt
 def generate_random_graph(num_nodes, probability):
     graph = [[0] * num_nodes for _ in range(num_nodes)]
     
+    #we gotta make sure the graph is connected (every node is the end of at least one edge)
+    for i in range(1, num_nodes):
+        random_node = random.randint(0, num_nodes - 1)
+        while random_node == i:
+            random_node = random.randint(0, num_nodes - 1)
+        
+        graph[i][random_node] = 1
+        graph[random_node][i] = 1
+
+    #creating the rest of the graph
     for i in range(num_nodes):
         for j in range(i + 1, num_nodes):
-            if random.random() < probability:
+            if graph[i][j] == 0 and random.random() < probability:
                 graph[i][j] = 1
                 graph[j][i] = 1
 
@@ -104,7 +114,8 @@ def read_scientific_instance(filename):
 
 def generate_data_files():
     edge_probability = 0.5
-    dims = [5, 8, 10, 11, 15, 20, 30, 50, 70, 33, 38]
+    #dims = [5, 8, 10, 11, 15, 20, 30, 50, 70, 33, 38]
+    dims = [30]
 
     for i in dims:
         num_nodes = i
@@ -125,6 +136,6 @@ def generate_data_files():
 
 
 
-#generate_data_files()
+generate_data_files()
 #read_instance('data\data5.txt')
 #read_scientific_instance('data\\nug_12_5.txt')

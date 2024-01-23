@@ -191,3 +191,15 @@ Dim,Method,Value,Time
 30,"shaking_inverse, make_change_inverse, local_search_with_permutation",3420,26.31
 30,"shaking_inverse, make_change_scramble, local_search",3418,10.64
 30,"shaking_inverse, make_change_scramble, local_search_with_permutation",3419,27.32
+8,"shaking_swap, make_change_swap, local_search",21,0.27
+8,"shaking_swap, make_change_swap, local_search_with_permutation",21,0.92
+8,"shaking_swap, make_change_inverse, local_search",21,0.26
+8,"shaking_swap, make_change_inverse, local_search_with_permutation",21,0.64
+8,"shaking_swap, make_change_scramble, local_search",21,0.47
+8,"shaking_swap, make_change_scramble, local_search_with_permutation",21,1.0
+8,"shaking_inverse, make_change_swap, local_search",21,0.27
+8,"shaking_inverse, make_change_swap, local_search_with_permutation",21,0.86
+8,"shaking_inverse, make_change_inverse, local_search",21,0.28
+8,"shaking_inverse, make_change_inverse, local_search_with_permutation",21,0.87
+8,"shaking_inverse, make_change_scramble, local_search",21,0.41
+8,"shaking_inverse, make_change_scramble, local_search_with_permutation",21,0.98
